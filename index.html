@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | VICTOR DE CASTRO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!--ES LA PARTE DEL NOMBRE -->
+        <h4>VICTOR</h4>
+
+        <!--ES LA PARTE DEL MENU -->
+        <nav class="nav__menu">
+            <ul class="listas">
+                <li><a href="#" class="lista__menu">ABOUT ME</a></li>
+                <li><a href="#skills" class="lista__menu">PROJECT</a></li>
+                <li><a href="#contact" class="lista__menu">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <!--ESTE DIV ES LA PARTE DE LAS IMAGENES DESLIZANTES-->
+            <div class="fondo__imagen">
+                <div class="text__radius">
+                    <h1>Hi, <br> I´m 
+                        <span>Victor </span> <br>Web Designer</h1>
+                    <button>Contact</button>
+                </div>
+
+                <div class="imagen__radius">
+                    <img src="imagen/foto__victor11.png" alt="">
+                </div>
+            </div>
+
+            <!--ESTE DIV ES LA PARTE DEL ABOUT ME-->
+            <div class="section__about__me">
+                <div class="imagen__personal">
+                    <img src="imagen/victor__completed.png" alt="">
+                </div>
+                <div class="caja__about__me">
+                    <h1> ABOUT ME</h1>
+                    <p>Soy estudiante de Ingeniería en Computación con una fuerte motivación por el desarrollo web y la programación. Me considero una persona responsable y dedicada, especialmente cuando trabajo en proyectos que me permiten aprender y mejorar mis habilidades. Disfruto crear soluciones mediante HTML, CSS y JavaScript, y a veces dejo que mi lado creativo tome el control para diseñar ideas nuevas y diferentes.
+                         Mi objetivo es seguir creciendo como desarrollador, construyendo proyectos que combinen funcionalidad, diseño y creatividad.</p>
+                </div>
+            </div>
+
+            <!--ESTE DIV ES LA PARTE DE ABOUT ME/ HABILIDADES-->
+            <div class="section__habilidades">
+                <h1 id="skills" >SKILLS</h1>
+                <div class="flex__habilidades">
+                    <div class="item__habilidades item__1">
+                        <img src="imagen/html__css__logo.png.png" alt="">
+                        <p>Capacidad para estructurar contenido web con HTML5 y diseñar interfaces responsivas utilizando CSS3.</p>
+                    </div>
+                    <div class="item__habilidades item__2">
+                        <img src="imagen/logo__idioma.png" alt="">
+                        <p>- Spanish: Native</p>
+                        <p>- Portugues: B2-C1</p>
+                        <P>- English: A1-A2</P>
+                    </div>
+                    <div class="item__habilidades item__3">
+                        <img src="imagen/logo__javascript.png" alt="">
+                        <p>Capacidad para implementar funcionalidades avanzadas en sitios web usando JavaScript, desde animaciones y formularios hasta la interacción con datos y servicios externos.</p>
+                    </div>
+                    <div class="item__habilidades item__4">
+                        <h2>CUATRO</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--ESTE DIV ES LA PARTE DE PROYECTOS-->
+            <div class="section__proyecto">
+                <h1>PROJECT</h1>
+                <div class="grid__proyecto">
+                    <div class="grid__cajas">
+                        1
+                    </div>
+                    <div class="grid__cajas">
+                        2
+                    </div>
+                    <div class="grid__cajas">
+                        3
+                    </div>
+                    <div class="grid__cajas">
+                        4
+                    </div>
+                    <div class="grid__cajas">
+                        5
+                    </div>
+                    <div class="grid__cajas">
+                        6
+                    </div>
+                </div>
+            </div>
+
+            <!--ESTE DIV ES LA PARTE DE CONTACTOS-->
+            <div id="contact" class="contact">
+                <form class="form__contact"  action="">
+                    <h2>Message</h2>
+                    <input class="inputs input__nombre" placeholder="Name" type="text" required>
+                    <input class="inputs input__email" placeholder="E-mail" type="email" required >
+                    <input class="inputs input__mensaje" placeholder="Message"  type="text" >
+                    <button class="input__button" type="submit" >Submit</button>
+                </form>
+
+                <div class="redes__sociales">
+                    <div class="redes instagram">
+                        <img src="imagen/logo__instagram.png" alt="">
+                        <label for="">Instagram</label>
+                    </div>
+                    <div class="redes  facebook">
+                        <img src="imagen/correo.jpg" alt="">
+                        <label for="">E-Mail</label>
+                    </div>
+                    <div class="redes correo">
+                        <img src="imagen/facebook.png" alt="">
+                        <label for="">Facebook</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Victor De Castro. Todos los derechos reservados.</p>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,403 @@
+body{
+    margin:0 ;
+    font-family: sans-serif;
+}
+div{
+    box-sizing: border-box;
+}
+
+
+/*ESTA ES LA PARTE DEL HEADER*/
+
+header{
+    border-bottom: 1px solid rgb(197, 197, 197);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 10px 3px rgb(161, 161, 161);
+}
+
+
+header h4{
+    margin-left: 200px;
+}
+
+
+
+
+.nav__menu{
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.listas{
+    list-style: none;
+    display: flex;
+    
+}
+
+.listas a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.lista__menu{
+    border-radius: 60%;
+}
+
+.lista__menu:active, .lista__menu:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    background-color: #155cb96b;
+
+}
+
+
+/*ESTE ES EL FIN DEL HEADER*/
+
+
+/*ESTA ES LA PARTE DEL SECTION*/
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+.fondo__imagen{
+   background-color:  rgb(255, 251, 251);
+    height: 450px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.text__radius h1{
+    font-size: 45px;
+}
+
+.text__radius span{
+    color: #2e68b5;
+}
+.text__radius button{
+    background-color: #224d85;
+    color: white;
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.text__radius button:hover{
+    background-color: #0a1f99;
+}
+
+.imagen__radius img{
+    border-radius: 120px 45px 150px 100px ;
+    width: 260px;
+
+}
+
+@media screen and (max-width:500px) {
+    .imagen__radius img {
+        display: none;
+    }
+}
+
+
+
+/*---------  ESTE APARTADO ES DEL ABOUT ME-DESCRIPTION ------------*/
+.section__about__me{
+    background-color:  rgb(250, 250, 250);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.imagen__personal img{
+    width:300px;
+    height: 500px;
+    margin: 30px;
+    margin-left: 100PX;
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px black;
+}
+
+.caja__about__me{
+    margin: 30px;
+    padding: 9px;
+    margin: auto;
+}
+
+
+.caja__about__me p {
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+@media screen  and (max-width:500px){
+    .section__about__me{
+        flex-wrap: wrap;
+    }    
+    .imagen__personal img{
+        width: 250px;
+        height: 450px;
+    }
+    
+}
+
+/*---------  ESTE ES EL FIN DEL APARTADO ABOUT ME-DESCRIPTION ------------*/
+
+
+
+/*---------  ESTE ES EL INICIO DEL APARTADO ABOUT ME-HABILIDADES ------------*/
+
+.section__habilidades{
+    background-color:  #48e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__habilidades h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.flex__habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.item__habilidades{
+    background-color: rgb(214, 226, 43);
+    min-width: 250px;
+    max-width: 250px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s linear;
+    transition-duration: 1s;
+    box-shadow: 8px 8px 10px black;
+}
+
+
+/*ESTA PARTE ES PARA EL ITEM__1 DE HABILIDADES*/
+.item__1{
+    background-color: red;
+}
+.item__1 p {
+    display: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.item__1 img{
+    width: 145px;
+    height: 120px;
+}
+.item__1:hover{
+    background-color: rgb(10, 5, 5);
+}
+.item__1:hover img{
+    display: none;
+}
+
+.item__1:hover p {
+    display: block;
+}
+/*ESTE ES EL FIN DE LA PARTE  ITEM__1 DE HABILIDADES*/
+
+
+
+/*ESTE ES EL INICIO DE LA PARTE  ITEM__2 DE HABILIDADES*/
+.item__2{
+    background-color: rgb(53, 204, 53);
+    display: flex;
+    flex-direction: column;
+}
+
+.item__2 p{
+    display: none;
+     color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+.item__2:hover{
+    background-color: black;
+}
+.item__2:hover img{
+    display: none;
+}
+.item__2:hover p{
+    display: block;
+}
+/*ESTE ES EL FIN DE LA PARTE  ITEM__2 DE HABILIDADES*/
+
+
+.item__3{
+    background-color: rgb(44, 43, 43);
+}
+.item__3 p{
+    display: none;
+     color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+.item__3:hover{
+    background-color: black;
+}
+.item__3:hover img{
+    display: none;
+}
+.item__3:hover p{
+    display: block;
+}
+
+
+
+
+/*---------  ESTE ES EL FIN DEL APARTADO ABOUT ME-HABILIDADES ------------*/
+
+
+/*---------  ESTE ES EL INICIO DEL APARTADO ABOUT ME-PROYECTOS ------------*/
+
+.section__proyecto{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__proyecto h1{
+   text-align: center;
+    margin-top: 30px;
+}
+
+.grid__proyecto{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,300px));
+    grid-template-rows: repeat(2,minmax(100px,270px));
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:500px) {
+    .grid__proyecto{
+        grid-template-columns: repeat(1,minmax(300px,300px));
+        grid-template-rows: repeat(6, minmax(270px,270px)) ;
+    }
+}
+
+.grid__cajas{
+    border: 1px solid rgb(180, 180, 180);
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/*---------  ESTE ES EL FIN DEL APARTADO ABOUT ME-PROYECTOS ------------*/
+
+
+
+
+/*---------  ESTE ES EL INICIO DEL APARTADO ABOUT ME-CONTACTO ------------*/
+.contact{
+    background-color: #48e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: rgb(241, 239, 239);
+    border-radius: 10px;
+}
+.inputs{
+    width: 270px;
+    height: 35px;
+    margin: 8px;
+    border-color: rgb(240, 240, 240);
+}
+.input__mensaje{
+    height: 130px;
+}
+.inputs::placeholder{
+    color: black;
+}
+
+
+.input__button{
+    width: 120px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.input__button:hover {
+    background-color: black;
+    color: white;
+}
+
+.redes__sociales{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+}
+.redes{
+    display: flex;
+    align-items: center;
+     
+}
+
+
+.redes img{
+    width: 45px;
+    margin: 10px;
+    border-radius: 100%;
+    border: 1px solid rgb(228, 227, 227);
+
+}
+
+
+
+
+/*---------  ESTE ES EL FIN DEL APARTADO ABOUT ME-CONTACTO ------------*/
+
+
+footer{
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    margin: 0;
+    color: white;
+}
+

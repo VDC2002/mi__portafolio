@@ -115,6 +115,16 @@
         .buttonArc:active,.buttonRestart:active{
             transform: scale(0.95);
         }
+        .buttonLeft {
+            transform: rotate(180deg);
+        }
+        .buttonUp {
+            transform: rotate(270deg);
+        }
+        .buttonDown{
+            transform: rotate(90deg);
+        }
+        
         
         /*The DIV 3 of the BUTTON RESERT*/
         .keyboardPartThree{
@@ -178,13 +188,13 @@
         <div class="keyboard">
             <div class="keyboardPartOne">
                 <div>
-                    <button class="buttonArc buttonLeft"></button>
-                    <button class="buttonArc buttonRight"></button>
+                    <button class="buttonArc buttonLeft"><i class="bx bx-play"></i></button>
+                    <button class="buttonArc buttonRight"><i class="bx bx-play"></i></button>
                 </div>
             </div>
             <div class="keyboardPartTwo">
-                <button class="buttonArc buttonDown"></button>
-                <button class="buttonArc buttonUp"></button>
+                <button class="buttonArc buttonDown"><i class="bx bx-play"></i></button>
+                <button class="buttonArc buttonUp"><i class="bx bx-play"></i></button>
             </div>
         </div>
         <div class="keyboardPartThree">
@@ -455,4 +465,5 @@
 </body>
 
 </html>
+
 

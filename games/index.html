@@ -36,7 +36,9 @@
             align-items: center;
             flex-direction: column;
             gap: 30px;
+            box-shadow: 8px 8px 8px var(--color--border);
         }
+
         .screen{
             position: relative;
             border: 3px solid var(--color--border);
@@ -47,6 +49,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 10px;
+            
         }
         /*SCREEN-CANVAS*/
         canvas{
@@ -87,107 +90,14 @@
         .keyboardPartOne div{
             display: flex;
             justify-content: center;
-        }
-        .buttonRect{
-            background-color: var(--color--screen);
-            border: 2px solid var(--color--border);
-            width: 48px;
-            height: 40px;
-            position: relative;
+            padding-top: 13px;
+            gap: 20px;
         }
 
-        /*THIS IS FOR THE BUTTONS OF THE RECT*/
-        .buttonCenter{
-            border: none;
-        }
-        .buttonUp{
-            border-bottom: none;
-        }
-        .buttonDown{
-            border-top: none;
-        }
-        .buttonLeft{
-            border-right: none;
-            border-top: none;
-            border-bottom: none;
-        }
-        /*THIS BEFORE AND AFTER IS TO JOIN BORDERS OF THE LEFT*/
-        .buttonLeft::before {
-            content: "";
-            position: absolute;
-            top: -2px;
-            right: -2px;
-            width: 50px;
-            height: 18px;
-            border-top: 2px solid var(--color--border);
-            border-radius: 0 0 0 18px;
-            pointer-events: none;
-        }
-        .buttonLeft::after {
-            content: "";
-            position: absolute;
-            bottom: -20px;
-            right: -2px;
-            width: 50px;
-            height: 18px;
-            border-top: 2px solid var(--color--border);
-            border-radius: 0 0 0 18px;
-            pointer-events: none;
-        }
-        
-        .buttonRight{
-            border-left: none;
-            border-top: none;
-            border-bottom: none;
-            
-        }
-        /*ESTE BEFORE Y AFTER ES PARA UNIR LOS BORDES DEL RIGHT*/
-        .buttonRight::before {
-            content: "";
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            width: 50px;
-            height: 18px;
-            border-top: 2px solid var(--color--border);
-            border-radius: 0 0 0 18px;
-            pointer-events: none;
-        }
-        .buttonRight::after {
-            content: "";
-            position: absolute;
-            bottom: -20px;
-            left: -2px;
-            width: 50px;
-            height: 18px;
-            border-top: 2px solid var(--color--border);
-            border-radius: 0 0 0 18px;
-            pointer-events: none;
-        }   
-        /*EFFECTS HOVER OF THE BUTTONS*/
-        .buttonRight:active{
-           box-shadow: 2px 2px 4px black;
-           background-color: var(--color--screen);
-        }
-        .buttonLeft:active{
-           box-shadow:-2px 2px 5px black;
-           background-color: var(--color--screen);
-        }
-        .buttonUp:active{
-           box-shadow: 2px 2px 4px black;
-           background-color: var(--color--screen);
-        }
-        .buttonDown:active{
-           box-shadow: 2px 2px 4px black;
-           background-color: var(--color--screen);
-    
-        }
-        
         
 
         /*THE DIV 2 OF THE BUTTON JUMP AND CROUCH*/
         .keyboardPartTwo{   
-            width: 100px;
             display: flex;
         }
         .keyboardPartTwo button:first-of-type {
@@ -195,8 +105,8 @@
         }
 
         .buttonArc{
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border: 2px solid var(--color--border);
             border-radius: 50%;
             background-color: var(--color--fondo--buttonArc);
@@ -268,27 +178,19 @@
         <div class="keyboard">
             <div class="keyboardPartOne">
                 <div>
-                    <button class="buttonRect buttonUp"></button>
-                </div>
-                <div>
-                    <button class="buttonRect buttonLeft"></button>
-                    <button class="buttonRect buttonCenter"></button>
-                    <button class="buttonRect buttonRight"></button>
-                </div>
-                <div>
-                    <button class="buttonRect buttonDown"></button>
+                    <button class="buttonArc buttonLeft"></button>
+                    <button class="buttonArc buttonRight"></button>
                 </div>
             </div>
             <div class="keyboardPartTwo">
-                <button class="buttonArc"></button>
-                <button class="buttonArc"></button>
+                <button class="buttonArc buttonDown"></button>
+                <button class="buttonArc buttonUp"></button>
             </div>
         </div>
         <div class="keyboardPartThree">
             <button class="buttonRestart"></button>
         </div>
     </div>
-
     
     <script>
         const message = document.querySelector(".message")
@@ -553,3 +455,4 @@
 </body>
 
 </html>
+
